@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: soutien-app-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GROQ_API_KEY_1
+        sync: false
+      - key: GROQ_API_KEY_2
+        sync: false
+      - key: GROQ_MODEL
+        value: llama-3.3-70b-versatile
+    disk:
+      name: database
+      mountPath: /data
+      sizeGB: 1
