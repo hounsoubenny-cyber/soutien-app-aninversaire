@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.445b6ad4.css",
+    "main.js": "/static/js/main.b292908d.js",
+    "static/media/inter-latin-ext-400-normal.woff": "/static/media/inter-latin-ext-400-normal.c616205185f0d3677df9.woff",
+    "static/media/inter-latin-ext-400-normal.woff2": "/static/media/inter-latin-ext-400-normal.210fb826cb25acbd4094.woff2",
+    "static/media/inter-latin-400-normal.woff": "/static/media/inter-latin-400-normal.2ea1079c0069eb040a52.woff",
+    "static/media/dm-serif-display-latin-400-normal.woff2": "/static/media/dm-serif-display-latin-400-normal.afe4d789caf92d680b6e.woff2",
+    "static/media/inter-latin-400-normal.woff2": "/static/media/inter-latin-400-normal.eca1e21531598d5db58f.woff2",
+    "static/media/dm-serif-display-latin-400-normal.woff": "/static/media/dm-serif-display-latin-400-normal.d2cb216150c8d245851b.woff",
+    "static/media/inter-cyrillic-ext-400-normal.woff": "/static/media/inter-cyrillic-ext-400-normal.818b84180553acc613f3.woff",
+    "static/media/dm-serif-display-latin-ext-400-normal.woff2": "/static/media/dm-serif-display-latin-ext-400-normal.3f7a0450ede90b86989d.woff2",
+    "static/media/inter-cyrillic-ext-400-normal.woff2": "/static/media/inter-cyrillic-ext-400-normal.39fbf8d2c4abc46f721f.woff2",
+    "static/media/inter-greek-400-normal.woff": "/static/media/inter-greek-400-normal.b412faded087fbcfa4ff.woff",
+    "static/media/inter-cyrillic-400-normal.woff": "/static/media/inter-cyrillic-400-normal.dd21c71421d58232ef03.woff",
+    "static/media/dm-serif-display-latin-ext-400-normal.woff": "/static/media/dm-serif-display-latin-ext-400-normal.8ead195b73c1225bbc24.woff",
+    "static/media/inter-greek-400-normal.woff2": "/static/media/inter-greek-400-normal.e685387f69602567b1da.woff2",
+    "static/media/inter-cyrillic-400-normal.woff2": "/static/media/inter-cyrillic-400-normal.89455522650c3fb3654c.woff2",
+    "static/media/inter-greek-ext-400-normal.woff": "/static/media/inter-greek-ext-400-normal.fc80974ec6969ee03fd2.woff",
+    "static/media/inter-vietnamese-400-normal.woff": "/static/media/inter-vietnamese-400-normal.aaa15d735e3826061950.woff",
+    "static/media/inter-greek-ext-400-normal.woff2": "/static/media/inter-greek-ext-400-normal.f2ef63e732b18d636044.woff2",
+    "static/media/inter-vietnamese-400-normal.woff2": "/static/media/inter-vietnamese-400-normal.44c9df135eec470b0ab6.woff2",
+    "index.html": "/index.html",
+    "main.445b6ad4.css.map": "/static/css/main.445b6ad4.css.map",
+    "main.b292908d.js.map": "/static/js/main.b292908d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.445b6ad4.css",
+    "static/js/main.b292908d.js"
+  ]
+}
