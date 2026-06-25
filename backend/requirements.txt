@@ -17,6 +17,4 @@ groq==1.2.0
 # === Rate limiting ===
 slowapi==0.1.9
 
-# === (optionnel) pour la compatibilité Pydantic v2 ===
-pydantic==2.12.5          # déjà inclus par fastapi, mais on verrouille
-sqlalchemy-libsql==0.2.0
+pydantic==2.12.5         
