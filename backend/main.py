@@ -11,6 +11,7 @@ from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 from backend.utils.limiter import limiter
 from backend.core.router import router
+import backend.core.router as r
 from backend.core.ai_router import ai_router
 from backend.api.api_config import IP, PORT, ALLOWED_ORIGINS
 from fastapi.staticfiles import StaticFiles
@@ -76,4 +77,5 @@ async def catch_all(full_path: str):
 
 if __name__ == "__main__":
     import uvicorn
+    print(r.db_manager.db_rul)
     uvicorn.run("main:app", host=IP, port=PORT, reload=True)
