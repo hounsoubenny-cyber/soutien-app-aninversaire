@@ -19,8 +19,8 @@ BUILD_DIR = os.path.join(FRONTEND, "build")
 STATICDIR = os.path.join(FRONTEND, "build", "static")
 INDEX_FILE = os.path.join(BUILD_DIR, "index.html")
 
-DBPATH = os.path.abspath(os.path.join(BASEDIR, "..", "database"))
-# DBPATH = os.environ.get("DBPATH", "/data")
+#DBPATH = os.path.abspath(os.path.join(BASEDIR, "..", "database"))
+DBPATH = os.environ.get("DBPATH", "/data")
 DIRS = [DBPATH]
 for path in DIRS:
     os.makedirs(path, exist_ok=True)
