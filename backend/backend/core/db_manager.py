@@ -281,7 +281,8 @@ class DBManager:
         if not db_url:
             db_url = os.path.join(DBPATH, "soutien_app.db")
             db_url = "sqlite:///" + db_url
-
+        
+        self.db_rul = db_url
         self.engine = create_engine(db_url, echo=False)
         SQLModel.metadata.create_all(self.engine)
         self._ensure_config_exists()
