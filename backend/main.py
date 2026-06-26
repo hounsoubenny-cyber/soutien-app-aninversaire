@@ -78,5 +78,5 @@ async def catch_all(full_path: str):
 if __name__ == "__main__":
     import uvicorn
     r.get_db_manager()
-    print("URL DATABASE:", r.db_manager.db_rul)
+    print("URL DATABASE:", r.db_manager.db_url)
     uvicorn.run("main:app", host=IP, port=PORT, reload=True)
