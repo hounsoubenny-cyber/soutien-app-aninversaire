@@ -59,7 +59,6 @@ def _verify_pin(pin: str, db_manager: DBManager):
     HTTPException
         Si le PIN est incorrect ou non configuré.
     """
-    return True
     cfg = db_manager.get_config()
     if not cfg or not cfg.pin_hash:
         raise HTTPException(
@@ -276,7 +275,7 @@ async def _check_pin(request: Request, data: CheckPinData):
     try:
         db_manager = get_db_manager()
         try:
-            return {"valid": True}
+            #return {"valid": True}
             _verify_pin(data.pin, db_manager)
             return {"valid": True}
         except HTTPException as e:
