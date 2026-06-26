@@ -14,7 +14,6 @@ from typing import Optional, List, Dict, Any, Tuple
 from datetime import datetime, date as date_type
 from backend.api.api_config import DBPATH
 
-
 # =============================================================================
 # Les classes enum
 # =============================================================================
@@ -279,11 +278,14 @@ class BrainDumpItem(SQLModel, table=True):
 class DBManager:
     def __init__(self, db_url: str = None):
         if not db_url:
-            db_url = os.path.join(DBPATH, "soutien_app.db")
-            db_url = "sqlite:///" + db_url
-        
-        self.db_rul = db_url
-        self.engine = create_engine(db_url, echo=False)
+            db_file = os.path.join(DBPATH, "soutien_app.db")
+            self.db_url = f"sqlite:///{db_file}"
+            self.engine = create_engine(
+                f"sqlite:///{db_file}",
+                connect_args={"check_same_thread": False},
+                echo=False,
+            )
+
         SQLModel.metadata.create_all(self.engine)
         self._ensure_config_exists()
 
@@ -301,7 +303,7 @@ class DBManager:
         with self.get_session() as session:
             cfg = session.get(AppConfig, 1)
             if not cfg:
-                cfg = AppConfig(pin_hash="")
+                cfg = AppConfig(pin_hash='$2b$12$ENDzYasQ10X0/9xn7NiRIOFVxZAniNs5dLzqtGS9uiwEPsAVAoJO2')
                 session.add(cfg)
                 session.commit()
 
